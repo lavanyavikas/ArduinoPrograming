@@ -1,0 +1,150 @@
+<div id="bioDiv">
+	<div id="bioInfoWrapper">
+		<div id="bioInfo" class="info-panel firstDiv2 panel-mobile">
+			<h5>Benjamin Salasek</h5>
+			<p class="p-yellow">
+				Greetings,
+				<br>
+				<br>
+				I am a <b>Front-end Web Application Developer</b>, an Arduino Open-Source Community member and an artist. Primarily using CSS & JavaScript, I make websites 100% responsive for any device.
+				<br>
+				<br>
+				I utilize tools such as Bootstrap and jQuery to create & format pages to spec & preference and to animate elements for a great UI and user experience. For single-page apps, I use Angular 6.
+				<br>
+				<br>
+				Thank you,
+				<br>
+				Benjamin Salasek
+			</p>
+		</div>
+	</div>
+	<div id="profilePictureDiv" style="">
+		<img src="assets/BenjaminSalasekProfilePicOrane.png" style="max-width: 319px">
+	</div>
+</div>
+
+<div id="arduino-home-div" class="clearfix">
+	<span>
+		Benjamin is an active member of the
+	</span>
+<!--	<img id="arduinoCommunity" src="assets/ArduinoCommunityLogo.png">-->
+	<img id="arduinoCommunity" src="assets/ArduinoGeneral/ArduinoChicagoCollaboration.svg">
+
+	<span id="arduinoCommunityTitle">
+		<span style="color: #00878F" >Arduino </span><span style="background-color: rgba(255,255,255,.9); color: ">Open-Source </span><span style="background-color: rgba(255,255,255,.9); color: #E47128">Community</span>
+	</span>
+	<p class="p-gray" >
+		 I created and am the organizer of the <a class="a2" href="https://www.meetup.com/Arduino-Chicago-Collaboration/">Arduino Chicago Collaboration</a> meetup group. If you are like most people, you don't know much about the <a href="https://www.arduino.cc" class="a2">Arduino open-source electronics platform</a>. It is one of my passions and has inspired me in many aspects of life including leading me down my career path. Essentially, it is a platform that allows me to design & create electronics and machines from scratch.
+	</p>
+</div>
+
+<div id="homeProjectsDiv" class="clearfix">
+	<div id="astoundingText">
+		<div>Some pictures of fascinating</div>
+			<span id="homeProjectsTitle">
+				<span style="color: #00878F">Projects </span><span>I have </span><span style="color: #E47128">Engineered</span>
+			</span>
+			<div id="homeProjectsText">
+
+			<p class="p-gray">
+				Click or tap to explore! These are some of my Arduino projects that I've worked on for the last few years. They include home robotics and electronics that I designed, coded and built from scratch!
+				<br>
+				<br>
+				<a class="btn-primary" routerLink="/arduino">Let me see!</a>
+			</p>
+		</div>
+	</div>
+	<div id="honeycomb">
+		<div class="" style="">
+			<div class="arduino-cards-small arduino-card-hover" *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}">
+				<div class="drop" style=""><span style="display: inline-block; vertical-align: middle; line-height: normal;">{{arduino.title}}</span></div>
+				<img class="arduino-cards-smallCover" style="" src="{{arduino.moreImagesPath[0]}}">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="homeReference" class="p-white">
+<!--	<h6 style="color: lightgray">Reference</h6>-->
+		<span><img src="assets/Logo/BenjaminDotWebsiteLogo-full.svg" style="width: 50px; margin-bottom: 15px"> <span class="stroke logoB"> B</span>enjamin<span class="stroke logoDot">.</span><span class="stroke logoW">W</span>ebsite &nbsp; &nbsp; &nbsp;</span>
+
+		<a href="http://codingtemple.com"><span style="color: white"><img src="assets/codingTempleLogo.png" style="display: inline; width: 100px">&nbsp; &nbsp; &nbsp;</span>
+		</a>
+
+		<a href="http://arduino.cc">
+			<span><img src="assets/2000px-Arduino_Logo.svg.png" style="	display: inline; width: 70px; margin-bottom: 15px"></span>
+		</a>
+</div>
+<!--<div style="font-size: 2px; color: white">test1</div>-->
+<!--
+<div class="container">
+	<div class="row">
+	<div class="box col-sm" style="font-size: 1rem">
+		<h5>Introduction</h5>
+		Hello, I am Benjamin Salasek. For those of you who do not know, I am an Arduino enthusiest, a software developer and an artist. Please browse this site, and don't forget to check out all of my cool Arduino projects!
+		<br>
+		<br>
+		Thank you,
+		<br>
+		Benjamin Salasek
+	</div>
+	<br>
+	<div class="col" style="text-align: center; font-size: 0px">
+		<div class="shadow-box" style="display: inline-block">
+			<div class="carousel-div">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1" data-wrap="true" direction="left" data-pause="false">
+				  <div class="carousel-inner">
+					 <div class="carousel-item active">
+					 	<a href="https://benjaminc137.github.io/JavaScript_play/"><img class="d-block w-100 carousel-image" src="assets/SliderBananaScreenshot20190214%20small%20IMG_9741.png" style="object-fit: scale-down"></a>
+						<a href="https://benjaminc137.github.io/JavaScript_play/"><div class="carousel-caption" style="text-align: center; font-size: 18px">Slider Banana©</div></a>
+					</div>
+					<div *ngFor="let arduino of arduinoProjects" routerLink="/arduino-detail/{{arduino.id}}" class="carousel-item cursor-finger">
+					  <img class="d-block w-100 carousel-image" src="{{arduino.imagePath}}" alt="second slide">
+						<div class="carousel-caption" style="text-align: center; font-size: 18px">
+							{{arduino.title}}
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+-->
+
+
+<!--https://www.bypeople.com/pure-css-responsive-honeycomb-grid/-->
+
+
+
+<!--https://codepen.io/hjools/pen/NpJjPE-->
+<!--
+
+<div class='hexbuttons'>
+  <div class='hexr'>
+    <div class='hexagon hide' style="z-index: 10"><span title='account'><i class=''></i></span></div>
+    <div class='hexagon' style="z-index: 10"><img src="assets/ArduinomyFace/myFace-key_photo-IMG_6979.jpeg" style="width: 100%; padding: -10px 10px; mix-blend-mode: lighten"><span title='navigation'><i class=''></i></span></div>
+    <div class='hexagon'><img src="assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg" style="width: 100px; mix-blend-mode: lighten"><span title='navigation'><i class=''></i></span></div>
+  </div>
+  <div class='hexr'>
+    <div class='hexagon'><img src="assets/ArduinoNeechiFeeder/Neechi-hanging-closeup-IMG_5184.jpeg" style="width: 100px; mix-blend-mode: lighten"><span title='about us'><i class=''></i></span></div>
+    <div class='hexagon'><img src="assets/ArduinoTank/tank-key-photo-IMG_3017%202.jpeg" style="width: 100px; mix-blend-mode: lighten"><span title='placeholder'><i class=''></i></span></div>
+	<div class='hexagon'><img src="assets/ArduinoBuddy/buddy-full-top-IMG_0541.jpeg" style="width: 100px; mix-blend-mode: lighten"><span title='about us'><i class=''></i></span></div>
+    <div class='hexagon'><img src="assets/ArduinoHomeBox/Homebox-complete-IMG_8136.png" style="width: 100px; mix-blend-mode: lighten"><span title='placeholder'><i class=''></i></span></div>
+  </div>
+  <div class='hexr'>
+    <div class='hexagon hide'><span title='favorites'><i class=''></i></span></div>
+    <div class='hexagon'><span title='new post'><i class=''></i></span></div>
+    <div class='hexagon hide'><span title='liked'><i class=''></i></span></div>
+	<div class='hexagon'><span title='liked'><i class=''></i></span></div>
+	 <div class='hexagon'><span title='placeholder'><i class=''></i></span></div>
+  </div>
+	<div class='hexr'>
+		<div class='hexagon'><span title='favorites'><i class=''></i></span></div>
+		<div class='hexagon'><span title='liked'><i class=''></i></span></div>
+		<div class='hexagon'><span title='liked'><i class=''></i></span></div>
+		<div class='hexagon'><span title='liked'><i class=''></i></span></div>
+  </div>
+</div>
+-->

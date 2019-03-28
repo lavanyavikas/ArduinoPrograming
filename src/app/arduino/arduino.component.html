@@ -1,0 +1,77 @@
+<div style="text-align: right">
+		<h4 class="p-gray inline-block shrinkH4" style="float: left">Prototyping with Arduino involves</h4>
+	<span id="" class="inline-block">
+		<img id="ArduinoLogo1" class="shrink-img-1" id="" src="assets/2000px-Arduino_Logo.svg.png" style="">
+	</span>
+</div>
+<div id="whatsArduinoDiv" class="clearfix" style="text-align: left">
+	<div class="threeColorTitle">
+		<span id="">
+			<span style="color: #E47128">Robotics, </span><span>Electronics & </span><span style="color:  #00878F">Microcontrollers</span>
+		</span>
+	</div>
+	<div style="float: right">
+		<img id="arduinoUno" class="pngShadow" src="assets/ArduinoUno.png">
+		<div id="arduinoInfo" class="info-panel firstDiv panel-mobile" style="max-width: calc(100% - 450px); margin: 25px">
+			<h5 style="text-align: right">What is Arduino?</h5>
+			<p class="p-yellow">
+				For those of you who have never heard of Arduino (or never met me), Arduino is an open-source, electronic prototyping platform.
+			</p>
+			<br>
+				<h5 style="text-align: right">What?</h5>
+			<p class="p-yellow">
+				Basically, it includes two main components. The first is something called a micro controller which is like a computer chip. The second is a coding language based on C/C++ and an IDE (Integrated Development Environment) which is a way to write software. You design a device and write code to put onto it.
+			</p>
+			<br>
+				<H5 style="text-align: right">Huh?</H5>
+			<p class="p-yellow">
+				It is a way to invent robotics & electronics from scratch! You can use all kinds of sensors and motors to make cool stuff! To get a better idea of what Arduino is, you can see what I've created!
+				<br>
+				<br>
+				If you would like to know more about Arduino, please see <a href="https://www.arduino.cc">arduino.cc</a>
+			</p>
+		</div>
+	</div>
+	<div id="" class="inline-block">
+<!--
+		<h4 class="shadow-text" style="display: block; text-align: center; font-size: 3em; color: #62AEB2">Arduino Uno</h4>
+		<h4 class="shadow-text" style="display: block; text-align: center; font-size: 2em; color: #E47128 ">Microcontroller</h4>
+-->
+<!--
+		<div id="">
+			<img class="" style="width: 400px" id=""src="assets/ArduinoGeneral/simpleArduino.jpeg">
+		</div>
+-->
+	</div>
+</div>
+
+<div id="arduino-projects">
+	<form (ngSubmit)="submitClicked()" style="padding: 1vw">
+		<div class="form" style=" width: 40vw" style="display: inline-block">
+			<input [(ngModel)]="searchText" class="form-control" style="border-radius: 100px" placeholder="Title" name="searchText" />
+	<!--		<input [(ngModel)]="searchTextComponent" class="form-control" placeholder="Component" name="searchTextComponent" />			-->
+		</div>
+	<input style="display: inline-block; margin-left: 5px" type="submit" class="btn-primary" value="Search" />
+	</form>
+
+	<!--{{searchText}}-->
+	<div class="card-deck justify-content-around" style="padding-bottom: 15px" >
+
+		<div class="card arduino-cards arduino-card-hover info-panel projects-filter" *ngFor="let arduino of arduinoProjects | filter:filterargs" routerLink="/arduino-detail/{{arduino.id}}">
+			<h5 class="card-title" style="font-size: 1em" >{{arduino.title}}</h5>
+			<img class="card-img-top" style="" src="{{arduino.moreImagesPath[0]}}">
+			<div class="card-body">
+				<div class="card-text" style="background-color: white;">
+				</div>
+			</div>
+			<footer class="card-footer" style="margin: 0px">
+			  <p class="p-yellow">Completion Date: {{arduino.dateCompleted}}</p>
+			</footer>
+		</div>
+	</div>
+</div>
+<div class="box">
+	<h3 style="color: white">Example Sketch/Code</h3>
+	This is from one of the Tank iterations.
+	<iframe src="https://create.arduino.cc/editor/salasek/5351fb41-dbf9-4220-a081-3b0db99bc6c0/preview?embed" style="height:510px; width:100%; margin:10px 0" frameborder="0"></iframe>
+</div>
